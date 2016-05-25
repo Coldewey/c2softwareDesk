@@ -6780,7 +6780,10 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
 }
 .custom-cover .text-primary {
-  color: ;
+  color: #e30051;
+}
+.custom-cover .text-secondary {
+  color: #555;
 }
 .custom-cover .description {
   font-size: 18px;
