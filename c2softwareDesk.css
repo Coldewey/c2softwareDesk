@@ -6777,31 +6777,14 @@ body {
  * }
 */
 .custom-cover {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
 }
-.custom-cover .download-button {
-  display: inline-block;
-  height: auto;
-  margin-top: 40px;
-  padding: 0.8em 1.2em;
-  color: white;
-  line-height: 1.5;
-  font-size: 16px;
-  font-weight: 400;
-  text-shadow: none;
-  border-radius: 5px;
-  background: #e30051;
-  box-shadow: 4px 4px rgba(0, 0, 0, 0.1);
+.custom-cover .description {
+  font-size: 18px;
+  line-height: 1.5em;
 }
-.custom-cover .download-button:hover {
-  text-decoration: none;
-  background: #ff176a;
-}
-.custom-cover .version-support {
-  display: block;
+.custom-cover .requirements {
   font-size: 14px;
-  margin-top: 10px;
-  color: #849189;
 }
 .custom-cover .navbar {
   background-color: rgba(255, 255, 255, 0.5) !important;
