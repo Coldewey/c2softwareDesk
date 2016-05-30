@@ -24,11 +24,11 @@
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="c2softwareDesk.css" rel="stylesheet" type="text/css">
   </head><body>
-    <div class="cover custom-cover">
-      <div class="navbar">
+    <div class="cover">
+      <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -36,10 +36,13 @@
             </button>
             <a class="navbar-brand" href="http://www.c2software.de"><img height="20" alt="c2software" src="assets/rz_logo_coldewey_com__c2_software_cmyk.svg"></a>
           </div>
-          <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
               <li class="active">
-                <a href="#">Start</a>
+                <a href="#download">Download</a>
+              </li>
+              <li>
+                <a href="#function">Funktionen</a>
               </li>
               <li>
                 <a href="http://www.coldewey.de/impressum.html">Kontakt</a>
@@ -48,20 +51,25 @@
           </div>
         </div>
       </div>
-      <div class="cover-image" style="background-image : url('assets/background.jpg')"></div>
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h1 class="text-muted"><span class="text-secondary">c2</span><span class="text-primary">software</span><span class="text-secondary">Desk</span></h1>
+            <h1 class="text-muted" style="display: inline-flex;">
+              <span class="text-secondary">c2</span>
+              <span class="text-primary">software</span>
+              <span class="text-secondary">Desk</span>
+            </h1>
             <p class="text-muted">Zeit- und Leistungserfassung an Ort und Stelle</p>
           </div>
         </div>
         <div class="row">
           <div class="col-md-offset-2 col-md-4">
-            <p class="description">c2software auf Ihrem Desktop.<br>Versuchen Sie es!</p>
+            <p class="description">c2software auf Ihrem Desktop.
+              <br>Versuchen Sie es!</p>
             <p class="requirements">Verfügbar für
               <a href="https://download.c2software.de/download/osx">Mac</a>,
-              <a href="https://download.c2software.de/download/windows">Windows</a>&nbsp;und
+              <a href="https://download.c2software.de/download/windows">Windows</a>,
+              <a href="https://download.c2software.de/download/windows?filetype=msi">Windows MSI</a>&nbsp;und
               <a href="https://download.c2software.de/download/linux">Linux</a>.</p>
           </div>
           <div class="col-md-4">
@@ -69,6 +77,13 @@
               <a href="https://download.c2software.de/download" class="btn btn-large btn-block btn-primary">
                       <i class="fa fa-windows" aria-hidden="true">&nbsp;</i>Download für Windows
                       <br><small>Für Windows 7 oder neuer</small>
+                    </a>
+            </p>
+            <p class="download-section download-windows text-muted">
+              <a class="btn btn-block btn-info btn-large" href="https://download.c2software.de/download?filetype=msi">
+                      <i class="fa fa-windows" aria-hidden="true">&nbsp;</i>Download für Windows Administratoren
+                <br><small>Installation via Gruppenrichtlinie - MSI Paket</small>
+                <br><small>Für Windows 7 oder neuer</small>
                     </a>
             </p>
             <p class="download-section download-macintel">
@@ -87,11 +102,24 @@
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="section section-white" id="function">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page-header text-primary">
+              <h1>Funktionen&nbsp;
+                <small>Automatische Updates, Autostart uvm.</small>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section-white">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive">
+            <img src="assets/desktop_osx.png" class="img-responsive img-thumbnail">
           </div>
           <div class="col-md-6">
             <h1 class="text-primary">Schnell erfasst</h1>
@@ -101,7 +129,7 @@
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="section section-white" id="key_overview">
       <div class="background-image"></div>
       <div class="container">
         <div class="row">
@@ -111,7 +139,71 @@
             <p></p>
           </div>
           <div class="col-md-6">
-            <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive">
+            <img src="assets/desktop_windows.png" class="img-responsive img-thumbnail">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="assets/feature_update.png" class="center-block img-responsive img-thumbnail">
+            <h2>Immer Aktuell</h2>
+            <p>c2softwareDesk aktualisiert sich automatisch - Damit Sie immer auf den
+              neusten Stand sind.</p>
+          </div>
+          <div class="col-md-4">
+            <img src="assets\feature_foreground.png" class="center-block img-responsive img-thumbnail">
+            <h2>Im Vordergrund</h2>
+            <p>Wahlweise ist c2softwareDesk immer im Vordergrund.</p>
+          </div>
+          <div class="col-md-4">
+            <img class="center-block img-responsive img-thumbnail" src="assets/feature_install.png">
+            <h2>Kinderleichte Installation</h2>
+            <p>Schnelle und Benutzerfreundliche Installation - Keine nervigen Fragen.
+              <br>
+              <br>Auch für Admins ist dank des MSI-Paketes eine Firmenweite Installation
+              möglich.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page-header text-primary">
+              <h1>Für jeden Desktop
+                <font color="#777777">
+                  <span style="font-size: 23.4px; line-height: 23.4px;">Windows, OS X oder Linux</span>
+                </font>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section-white" id="for_every_desktop">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="assets/desktop_windowsq.png" class="center-block img-circle img-responsive">
+            <h3 class="text-center">
+              <i class="fa fa-windows" aria-hidden="true">&nbsp;</i>Windows</h3>
+            <p class="text-center">ab Windows 7</p>
+          </div>
+          <div class="col-md-4">
+            <img src="assets/desktop_osxq.png" class="center-block img-circle img-responsive">
+            <h3 class="text-center">
+              <i class="fa fa-apple" aria-hidden="true">&nbsp;</i>OS X</h3>
+            <p class="text-center">ab OS X 10.9</p>
+          </div>
+          <div class="col-md-4">
+            <img src="assets/desktop_linuxq.png" class="center-block img-circle img-responsive">
+            <h3 class="text-center">
+              <i class="fa fa-linux" aria-hidden="true">&nbsp;</i>Linux</h3>
+            <p class="text-center">Debian basierte Distributionen</p>
           </div>
         </div>
       </div>
@@ -120,25 +212,37 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1 class="text-center text-primary">Für jeden Desktop</h1>
-            <p class="text-center">Windows, OS X oder Linux</p>
+            <div class="page-header">
+              <h1 class="text-primary">Unterstützt&nbsp;
+                <small>Durch großartige Open-Source Software</small>
+              </h1>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="section section-opensource">
+      <div class="container">
         <div class="row">
-          <div class="col-md-4">
-            <img src="http://pingendo.github.io/pingendo-bootstrap/assets/user_placeholder.png" class="center-block img-circle img-responsive">
-            <h3 class="text-center"><i class="fa fa-windows" aria-hidden="true">&nbsp;</i>Windows</h3>
-            <p class="text-center">ab Windows 7</p>
+          <div class="col-md-3">
+            <a href="http://electron.atom.io/" target="_blank">
+            	<img src="assets/electron-logo.svg" class="img-responsive img-rounded">
+            </a>
           </div>
-          <div class="col-md-4">
-            <img src="http://pingendo.github.io/pingendo-bootstrap/assets/user_placeholder.png" class="center-block img-circle img-responsive">
-            <h3 class="text-center"><i class="fa fa-apple" aria-hidden="true">&nbsp;</i>OS X</h3>
-            <p class="text-center">ab OS X 10.9</p>
+          <div class="col-md-3">
+            <a href="https://angularjs.org/" target="_blank">
+            <img src="assets/angularjs-logo.svg" class="img-responsive img-rounded">
+            </a>
           </div>
-          <div class="col-md-4">
-            <img src="http://pingendo.github.io/pingendo-bootstrap/assets/user_placeholder.png" class="center-block img-circle img-responsive">
-            <h3 class="text-center"><i class="fa fa-linux" aria-hidden="true">&nbsp;</i>Linux</h3>
-            <p class="text-center">Debian basierte Distributionen</p>
+          <div class="col-md-3">
+            <a href="http://getbootstrap.com/" target="_blank">
+            	<img src="assets/bootstrap-logo.svg" class="img-responsive img-rounded">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="http://ionicframework.com/" target="_blank">
+            	<img src="assets/ionic-logo.svg" class="img-responsive img-rounded">
+            </a>
           </div>
         </div>
       </div>
@@ -175,21 +279,21 @@
     </footer>
     <script type="text/javascript">
       (function ($) {
-                'use strict';
-            	var platform = 'unsupported';
-        		
-                $('.download-section').css('display', 'none');
-                var detect = (navigator.platform || '').toLowerCase();
-                if (detect.indexOf('win') !== -1) {
-                  platform = 'windows';
-                } else if (detect.indexOf('macintel') !== -1) {
-                  platform = 'macintel';
-                } else if (detect.indexOf('linux') !== -1) {
-                  platform = 'linux';
-                }
-                $('.download-' + platform).css('display', 'block');
-                
-              })(window.$);
+                                                'use strict';
+                                            	var platform = 'unsupported';
+                                        		
+                                                $('.download-section').css('display', 'none');
+                                                var detect = (navigator.platform || '').toLowerCase();
+                                                if (detect.indexOf('win') !== -1) {
+                                                  platform = 'windows';
+                                                } else if (detect.indexOf('macintel') !== -1) {
+                                                  platform = 'macintel';
+                                                } else if (detect.indexOf('linux') !== -1) {
+                                                  platform = 'linux';
+                                                }
+                                                $('.download-' + platform).css('display', 'block');
+                                                
+                                              })(window.$);
     </script>
   
 
