@@ -6786,7 +6786,8 @@ body {
 .section {
   background-color: rgba(255, 255, 255, 0.8);
 }
-.img-thumbnail {
+.img-thumbnail,
+.download-section {
   -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);
