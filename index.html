@@ -41,9 +41,7 @@
               <li class="active">
                 <a href="#download">Download</a>
               </li>
-              <li>
-                <a href="#function">Funktionen</a>
-              </li>
+              
               <li>
                 <a href="http://www.coldewey.de/impressum.html">Kontakt</a>
               </li>
@@ -67,10 +65,12 @@
         </div>
         <div class="row">
           <div class="col-md-offset-2 col-md-4">
-            <p class="description">c2software auf Ihrem Desktop.
-              <br>Versuchen Sie es!</p>
-            <p class="requirements">Verfügbar für
-              <a href="https://download.c2software.de/download/osx">Mac</a>,
+            <p class="description">Erfassen Sie Ihre Arbeits- und Leistungszeit jetzt auch auf Ihrem Desktop!
+              <br>
+              <br>
+            </p>
+            <p class="requirements">Verfügbar für die Betriebssysteme&nbsp;
+              <a href="https://download.c2software.de/download/osx">MacOS</a>,
               <a href="https://download.c2software.de/download/windows">Windows</a>&nbsp;und
               <a href="https://download.c2software.de/download/linux_64">Linux</a>.</p>
           </div>
@@ -104,19 +104,6 @@
         </div>
       </div>
     </div>
-    <div class="section section-white" id="function">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="page-header text-primary">
-              <h1>Funktionen&nbsp;
-                <small>Automatische Updates, Autostart uvm.</small>
-              </h1>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="section section-white">
       <div class="container">
         <div class="row">
@@ -124,8 +111,9 @@
             <img src="assets/desktop_osx.png" class="img-responsive img-thumbnail">
           </div>
           <div class="col-md-6">
-            <h1 class="text-primary">Einfach und schnell erfasst</h1>
-            <h3>Erfassen Sie Arbeits- und Leistungszeit im Hand umdrehen</h3>
+            <h1 class="text-primary">Einfach und schnell erfasst!</h1>
+            <h3>Erfassen Sie Ihre Arbeits- und Leistungszeit im Handumdrehen, Buchen Sie
+              Ihre Pausen, Beantragen Sie Urlaub und vieles mehr...</h3>
             <p></p>
           </div>
         </div>
@@ -136,8 +124,9 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <h1 class="text-primary">Im Überblick</h1>
-            <h3>Sehen wer da ist</h3>
+            <h1 class="text-primary">Alles im Überblick!</h1>
+            <h3>Die Bezeichnung "Live-Übersicht" verrät es - Sehen Sie in Echtzeit, welche
+              Mitarbeiter verfügbar oder abwesend sind.</h3>
             <p></p>
           </div>
           <div class="col-md-6">
@@ -152,20 +141,22 @@
           <div class="col-md-4">
             <img src="assets/feature_update.png" class="center-block img-responsive img-thumbnail">
             <h2>Immer aktuell</h2>
-            <p>c2softwareDesk aktualisiert sich automatisch - Damit Sie immer auf den
-              neusten Stand sind.</p>
+            <p>c2softwareDesk aktualisiert sich automatisch - so sind Sie immer auf dem
+              neusten Stand!</p>
           </div>
           <div class="col-md-4">
             <img src="assets\feature_foreground.png" class="center-block img-responsive img-thumbnail">
-            <h2>Im Vordergrund</h2>
-            <p>Wahlweise ist c2softwareDesk immer im Vordergrund.</p>
+            <h2>Auf Wunsch immer präsent</h2>
+            <p>Wahlweise wird c2softwareDesk immer im Vordergrund angezeigt - das beschleunigt
+              das Buchen!</p>
           </div>
           <div class="col-md-4">
             <img class="center-block img-responsive img-thumbnail" src="assets/feature_install.png">
-            <h2>Kinderleichte Installation</h2>
-            <p>Schnelle und Benutzerfreundliche Installation - Keine nervigen Fragen.
+            <h2>Einfache Installation</h2>
+            <p>Schnelle und benutzerfreundliche Installation - keine lästigen Installationsfragen
+              und keine Administratorenzugriffe notwendig!
               <br>
-              <br>Auch für Admins ist dank des MSI-Paketes eine Firmenweite Installation
+              <br>Auch für Administratoren ist dank des MSI-Paketes eine firmenweite Installation
               möglich.</p>
           </div>
         </div>
@@ -176,11 +167,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="page-header text-primary">
-              <h1>Für jeden Desktop
-                <font color="#777777">
-                  <span style="font-size: 23.4px; line-height: 23.4px;">Windows, OS X oder Linux</span>
-                </font>
-              </h1>
+              <h1>Für jeden Desktop - Windows, MacOS und Linux</h1>
             </div>
           </div>
         </div>
@@ -216,20 +203,7 @@
         </div>
       </div>
     </div>
-    <div class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="page-header">
-              <h1 class="text-primary">Unterstützt&nbsp;
-                <small>Durch großartige Open-Source Software</small>
-              </h1>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section section-opensource">
+    <div class="section section-white section-opensource">
       <div class="container">
         <div class="row">
           <div class="col-md-3">
@@ -287,21 +261,21 @@
     </footer>
     <script type="text/javascript">
       (function ($) {
-                                                'use strict';
-                                            	var platform = 'unsupported';
-                                        		
-                                                $('.download-section').css('display', 'none');
-                                                var detect = (navigator.platform || '').toLowerCase();
-                                                if (detect.indexOf('win') !== -1) {
-                                                  platform = 'windows';
-                                                } else if (detect.indexOf('macintel') !== -1) {
-                                                  platform = 'macintel';
-                                                } else if (detect.indexOf('linux') !== -1) {
-                                                  platform = 'linux';
-                                                }
-                                                $('.download-' + platform).css('display', 'block');
-                                                
-                                              })(window.$);
+                                                        'use strict';
+                                                    	var platform = 'unsupported';
+                                                		
+                                                        $('.download-section').css('display', 'none');
+                                                        var detect = (navigator.platform || '').toLowerCase();
+                                                        if (detect.indexOf('win') !== -1) {
+                                                          platform = 'windows';
+                                                        } else if (detect.indexOf('macintel') !== -1) {
+                                                          platform = 'macintel';
+                                                        } else if (detect.indexOf('linux') !== -1) {
+                                                          platform = 'linux';
+                                                        }
+                                                        $('.download-' + platform).css('display', 'block');
+                                                        
+                                                      })(window.$);
     </script>
   
 
